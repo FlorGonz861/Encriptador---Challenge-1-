@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="code.js"></script>
+
+    <title>Challenge 1 - Oracle ONE Encriptador de Texto</title>
+    
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="imagenes/Vector (1).png" alt="logo">
+    </header>
+    <main>
+        <section class="seccion1">
+            <textarea type="text" class="input" cols="40" rows="6" placeholder="Ingrese el texto aquí" id="entrada"></textarea>
+            <br>
+            <p>Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button type="submit" onclick="encriptar(this)">Encriptar</button>
+                <button type="submit" onclick="desencriptar(this)">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea type="text" class="salida" cols="18" rows="8"  id="input-salida"></textarea>
+            <div class="boton-copiar">
+                <button type="submit" onclick="copiar(this)" class="copiaypega">Copiar y Pegar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-texto">Florencia González - 2022</p>
+    </footer>
+    
+</body>
+</html>
